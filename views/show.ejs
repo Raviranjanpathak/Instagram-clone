@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show.ejs</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Here is your post details</h1>
+     <div class="posts-container">
+            <div class="post">
+                <h3>@<%=post.username%></h3>
+                <h4><%=post.content%></h4>
+                <img src="<%=post.image%>">
+                <p>Likes<%=post.likes%>&nbsp;&nbsp;Comments<%=post.comments%></p>
+                &nbsp;&nbsp;<a href="http://localhost:3000/posts">see posts</a>
+
+            </div>
+    </div>
+</body>
+</html>

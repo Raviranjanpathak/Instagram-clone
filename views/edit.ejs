@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="/form.css"> 
+</head>
+<body>
+    <form method="post" action="/posts/<%=post.id%>?_method=PATCH" >
+        <h2>Edit your post</h2>
+        <p>Id:<%=post.id%></p>
+        <p>Username:@<%=post.username%></p>
+        <textarea placeholder="" name="newContent"><%=post.content%></textarea><br>
+        <input type="number" placeholder="likes" name="newLikes" value="<%=post.likes%>"><br>
+        <input type="number" placeholder="comments" name="newComment" value="<%=post.comments%>"><br>
+        
+        <button>save changes</button>
+    </form>
+</body>
+</html>

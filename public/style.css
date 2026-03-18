@@ -1,0 +1,59 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.post {
+    width: 250px;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.posts-container {
+    display: flex;
+    flex-direction: column;   /* 👈 THIS is the key */
+    align-items: center;      /* horizontal center */
+    gap: 20px;
+    padding: 20px;
+}
+
+h3 {
+    color: brown;
+    font-style: italic;
+}
+
+h4 {
+    color: blue;
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+.create-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+
